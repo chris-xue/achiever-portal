@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1= Create a book!
+	form(action = '/book/create' method = 'POST')
+	p Title:
+      input(type="text" name="title" placeholder="")
+    p Year:
+      input(type="text" name="year" placeholder="")
+    p imdb:
+      input(type="text" name="imdb" placeholder="")
+    input(type="submit")
